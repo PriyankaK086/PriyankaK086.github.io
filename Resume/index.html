@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Priyanka Kulkarni - Data Analyst Portfolio. 2.6 years of experience in Python, SQL, Power BI, and Excel specializing in billing and revenue analytics.">
+    <title>Priyanka Kulkarni | Data Analyst Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Link to Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Glowing Grid and Mesh Orbs -->
+    <div class="bg-mesh">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-lines"></div>
+    </div>
+
+    <!-- Mobile Top Navigation Header -->
+    <header class="mobile-header">
+        <div class="mobile-profile">
+            <div class="mobile-avatar-glow">
+                <img src="assets/profile.png" alt="Priyanka Kulkarni Profile" class="mobile-avatar-img">
+            </div>
+            <div class="mobile-title-block">
+                <span class="mobile-name">Priyanka Kulkarni</span>
+                <span class="mobile-role">Data Analyst</span>
+            </div>
+        </div>
+        <div class="mobile-actions">
+            <span class="status-badge-compact">
+                <span class="pulse-dot"></span>
+                Open to Opportunities
+            </span>
+            <button class="hamburger-btn" aria-label="Toggle Navigation Menu" id="hamburger-btn">
+                <span class="hamburger-line line-1"></span>
+                <span class="hamburger-line line-2"></span>
+                <span class="hamburger-line line-3"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Slide-out Drawer Navigation Overlay -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <nav class="drawer-nav">
+            <ul>
+                <li><a href="#overview" class="drawer-link active" data-target="overview">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                        Overview
+                    </a></li>
+                <li><a href="#experience" class="drawer-link" data-target="experience">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                        </svg>
+                        Experience
+                    </a></li>
+                <li><a href="#skills" class="drawer-link" data-target="skills">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                            <polyline points="2 17 12 22 22 17" />
+                            <polyline points="2 12 12 17 22 12" />
+                        </svg>
+                        Skills
+                    </a></li>
+                <li><a href="#projects" class="drawer-link" data-target="projects">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                        </svg>
+                        Projects
+                    </a></li>
+                <li><a href="#education" class="drawer-link" data-target="education">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+                        </svg>
+                        Education
+                    </a></li>
+                <li><a href="#contact" class="drawer-link" data-target="contact">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        Contact
+                    </a></li>
+            </ul>
+            <div class="drawer-footer">
+                <a class="download-btn w-full" href="assets/Priyanka_Kulkarni_Data_Analyst_Resume.pdf"
+                    download="Priyanka_Kulkarni_Data_Analyst_Resume.pdf">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download Resume
+                </a>
+                <div class="drawer-contact-info">
+                    <div class="drawer-contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <span>Pune, Maharashtra</span>
+                    </div>
+                    <div class="drawer-contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span>+91 9067689507</span>
+                    </div>
+                    <div class="drawer-contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <span>kulkarnipriyanka086@gmail.com</span>
+                    </div>
+                </div>
+                <div class="drawer-socials">
+                    <a href="https://www.linkedin.com/in/priyanka--kulkarni" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                    <a href="mailto:kulkarnipriyanka086@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Desktop Sidebar Navigation (Fixed on Left) -->
+    <aside class="sidebar">
+        <!-- Circular Avatar Container -->
+        <div class="avatar-container">
+            <div class="avatar-ring-outer"></div>
+            <div class="avatar-ring-inner"></div>
+            <div class="avatar-glow"></div>
+            <img src="assets/profile.png" alt="Priyanka Kulkarni Profile" class="avatar-img">
+        </div>
+
+        <!-- Identity -->
+        <div class="profile-info">
+            <h1 class="profile-name">PRIYANKA KULKARNI</h1>
+            <p class="profile-role">Data Analyst</p>
+        </div>
+
+        <!-- Sidebar Navigation Menu -->
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#overview" class="nav-link active" data-target="overview">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                        <span>Overview</span>
+                    </a></li>
+                <li><a href="#experience" class="nav-link" data-target="experience">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                        </svg>
+                        <span>Experience</span>
+                    </a></li>
+                <li><a href="#skills" class="nav-link" data-target="skills">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                            <polyline points="2 17 12 22 22 17" />
+                            <polyline points="2 12 12 17 22 12" />
+                        </svg>
+                        <span>Skills</span>
+                    </a></li>
+                <li><a href="#projects" class="nav-link" data-target="projects">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                        </svg>
+                        <span>Projects</span>
+                    </a></li>
+                <li><a href="#education" class="nav-link" data-target="education">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+                        </svg>
+                        <span>Education</span>
+                    </a></li>
+                <li><a href="#contact" class="nav-link" data-target="contact">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <span>Contact</span>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <!-- Action / Download -->
+        <a class="download-btn" href="assets/Priyanka_Kulkarni_Data_Analyst_Resume.pdf"
+            download="Priyanka_Kulkarni_Data_Analyst_Resume.pdf">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download Resume
+        </a>
+
+        <!-- Contact Section in Sidebar -->
+        <div class="sidebar-contact">
+            <h3 class="contact-title">Contact</h3>
+            <div class="contact-list">
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <span>Pune, Maharashtra</span>
+                </div>
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span>+91 9067689507</span>
+                </div>
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    <span class="email-text">kulkarnipriyanka086@gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Let's Connect -->
+        <div class="sidebar-connect">
+            <h3 class="connect-title">Let's Connect</h3>
+            <p class="connect-subtitle">Open to exciting opportunities and collaborations!</p>
+            <div class="connect-socials">
+                <a href="https://www.linkedin.com/in/priyanka--kulkarni" target="_blank" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                </a>
+                <a href="mailto:kulkarnipriyanka086@gmail.com" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Panel (Scrollable) -->
+    <main class="main-content">
+        <!-- Top Status Bar & Desktop Socials -->
+        <div class="top-bar">
+            <span class="status-badge">
+                <span class="pulse-dot"></span>
+                Open to Opportunities
+            </span>
+            <div class="desktop-socials">
+                <a href="mailto:kulkarnipriyanka086@gmail.com" class="social-icon-btn" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/priyanka--kulkarni" class="social-icon-btn" target="_blank"
+                    aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://github.com" class="social-icon-btn" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Section: Overview -->
+        <section id="overview" class="section-container active-section">
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <span class="greeting">Hi, I'm</span>
+                    <h2 class="name-display">PRIYANKA KULKARNI</h2>
+                    <h3 class="role-display">Data Analyst</h3>
+                    <p class="intro-description">
+                        Data Analyst with 2.6 years of experience in Python, SQL, Power BI, and Excel, specializing in
+                        billing and revenue analytics. I build data-driven solutions and automation tools that turn
+                        complex data into actionable insights and drive business impact.
+                    </p>
+                </div>
+                <!-- Isometric Dashboard SVG Graphic (Exact replica of original theme) -->
+                <div class="intro-illustration">
+                    <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="isometric-svg">
+                        <!-- Definitions for gradients/glow filters -->
+                        <defs>
+                            <linearGradient id="cyan-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#06b6d4" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                            <linearGradient id="purple-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#d946ef" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                            <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.6" />
+                                <stop offset="100%" stop-color="#030712" stop-opacity="0.8" />
+                            </linearGradient>
+                            <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="6" result="blur" />
+                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                            </filter>
+                        </defs>
+
+                        <!-- Ground isometric grid lines (subtle) -->
+                        <g opacity="0.15">
+                            <path d="M 50,200 L 250,80 L 450,200 L 250,320 Z" stroke="#3b82f6" stroke-width="1.5" />
+                            <path d="M 100,200 L 250,110 L 400,200 L 250,290 Z" stroke="#8b5cf6" stroke-width="1" />
+                            <line x1="250" y1="80" x2="250" y2="320" stroke="#3b82f6" stroke-width="1" />
+                            <line x1="50" y1="200" x2="450" y2="200" stroke="#3b82f6" stroke-width="1" />
+                        </g>
+
+                        <!-- Main Isometric Base Card -->
+                        <polygon points="120,220 300,120 460,210 280,310" fill="url(#card-grad)" stroke="#4338ca"
+                            stroke-width="1.5" opacity="0.9" />
+
+                        <!-- Floating Glassmorphic Panel 1 (Left Side) -->
+                        <g transform="translate(-10, -20)">
+                            <!-- Top Surface -->
+                            <polygon points="150,190 250,135 320,175 220,230" fill="#080e30" fill-opacity="0.7"
+                                stroke="#06b6d4" stroke-width="1.5" />
+                            <!-- Sidebar inside Panel -->
+                            <polygon points="150,190 190,168 232,192 192,214" fill="#0c154a" stroke="#06b6d4"
+                                stroke-width="0.7" />
+                            <!-- Chart Line on Panel -->
+                            <path d="M 200,195 L 230,175 L 260,185 L 290,160" stroke="#06b6d4" stroke-width="2.5"
+                                fill="none" filter="url(#neon-glow)" />
+                            <!-- Dots on Chart -->
+                            <circle cx="200" cy="195" r="3" fill="#ffffff" />
+                            <circle cx="230" cy="175" r="3" fill="#ffffff" />
+                            <circle cx="260" cy="185" r="3" fill="#ffffff" />
+                            <circle cx="290" cy="160" r="3" fill="#ffffff" />
+                        </g>
+
+                        <!-- Floating Pie Chart Circle (Center) -->
+                        <g transform="translate(130, -30)">
+                            <!-- Isometric Circle / Cylinder Base -->
+                            <ellipse cx="150" cy="220" rx="35" ry="20" fill="#1e1e38" stroke="#a78bfa"
+                                stroke-width="1" />
+                            <!-- 3D Pie Segments -->
+                            <path d="M 150,220 L 120,210 A 35 20 0 0 1 175,205 Z" fill="url(#purple-gradient)" />
+                            <path d="M 150,220 L 175,205 A 35 20 0 0 1 180,230 Z" fill="#06b6d4" />
+                            <path d="M 150,220 L 180,230 A 35 20 0 0 1 120,210 Z" fill="#3b82f6" />
+                        </g>
+
+                        <!-- 3D Glowing Bars (Right Side) -->
+                        <!-- Bar 1 (Short, Cyan) -->
+                        <g transform="translate(290, 160)">
+                            <!-- Back Wall -->
+                            <polygon points="0,0 20,-10 20,-50 0,-40" fill="#0891b2" />
+                            <!-- Front Wall -->
+                            <polygon points="0,0 -20,10 -20,-30 0,-40" fill="#06b6d4" />
+                            <!-- Top Wall -->
+                            <polygon points="0,-40 20,-50 0,-60 -20,-50" fill="#22d3ee" stroke="#22d3ee"
+                                stroke-width="0.5" filter="url(#neon-glow)" />
+                        </g>
+                        <!-- Bar 2 (Medium, Blue) -->
+                        <g transform="translate(340, 185)">
+                            <polygon points="0,0 20,-10 20,-70 0,-60" fill="#2563eb" />
+                            <polygon points="0,0 -20,10 -20,-50 0,-60" fill="#3b82f6" />
+                            <polygon points="0,-60 20,-70 0,-80 -20,-70" fill="#60a5fa" stroke="#60a5fa"
+                                stroke-width="0.5" filter="url(#neon-glow)" />
+                        </g>
+                        <!-- Bar 3 (Tall, Purple) -->
+                        <g transform="translate(390, 210)">
+                            <polygon points="0,0 20,-10 20,-90 0,-80" fill="#7c3aed" />
+                            <polygon points="0,0 -20,10 -20,-70 0,-80" fill="#8b5cf6" />
+                            <polygon points="0,-80 20,-90 0,-100 -20,-90" fill="#a78bfa" stroke="#a78bfa"
+                                stroke-width="0.5" filter="url(#neon-glow)" />
+                        </g>
+
+                        <!-- Glowing Connection Node lines -->
+                        <path d="M 200,240 L 260,270 L 330,225" stroke="#a78bfa" stroke-width="1.5" fill="none"
+                            stroke-dasharray="4, 4" />
+                        <circle cx="260" cy="270" r="4" fill="#a78bfa" filter="url(#neon-glow)" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- KPI Cards Grid -->
+            <div class="kpi-grid">
+                <!-- KPI 1 -->
+                <div class="kpi-card" data-val="2">
+                    <div class="kpi-icon-wrap">
+                        <svg class="kpi-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4.5 16.5c-1.5 1.26-2 3.4-2 3.4s2.14-.5 3.4-2c1.2-1.42 2-3.4 2-3.4s-2 .8-3.4 2z" />
+                            <path d="M12 15l-3-3m0 0l-1.5-1.5M9 12l2.5-3.5M12 9l2.5-3.5M15 6l4-4-2 7.5L12 15z" />
+                        </svg>
+                    </div>
+                    <div class="kpi-content">
+                        <span class="kpi-number"><span class="counter">0</span></span>
+                        <span class="kpi-label">Automation Tools Built</span>
+                    </div>
+                </div>
+
+                <!-- KPI 2 -->
+                <div class="kpi-card" data-val="80">
+                    <div class="kpi-icon-wrap">
+                        <svg class="kpi-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <div class="kpi-content">
+                        <span class="kpi-number"><span class="counter">0</span>%</span>
+                        <span class="kpi-label">Reduction in Manual Analysis Effort</span>
+                    </div>
+                </div>
+
+                <!-- KPI 3 -->
+                <div class="kpi-card" data-val="20">
+                    <div class="kpi-icon-wrap">
+                        <svg class="kpi-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="6" />
+                            <circle cx="12" cy="12" r="2" />
+                        </svg>
+                    </div>
+                    <div class="kpi-content">
+                        <span class="kpi-number"><span class="counter">0</span>%</span>
+                        <span class="kpi-label">Improvement in Billing Accuracy</span>
+                    </div>
+                </div>
+
+                <!-- KPI 4 -->
+                <div class="kpi-card" data-val="8-10">
+                    <div class="kpi-icon-wrap">
+                        <svg class="kpi-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="20" x2="18" y2="10" />
+                            <line x1="12" y1="20" x2="12" y2="4" />
+                            <line x1="6" y1="20" x2="6" y2="14" />
+                        </svg>
+                    </div>
+                    <div class="kpi-content">
+                        <span class="kpi-number"><span class="counter">0</span>-<span
+                                class="counter-secondary">0</span></span>
+                        <span class="kpi-label">Key KPIs Tracked in Dashboards</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Summary Card -->
+            <div class="summary-card card-glow">
+                <div class="card-header">
+                    <svg class="section-title-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    <h3 class="card-title">Professional Summary</h3>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Data Analyst with 2.6 years of experience in Python, SQL, Power BI, and Excel, specializing in
+                        billing and revenue analytics for telecom and enterprise clients. Built two production
+                        automation tools (invoice compliance and revenue analytics) that cut manual analysis effort by
+                        80%, improved billing accuracy by 20%, and turned hours-long investigations into minutes.
+                        Skilled at translating large, messy operational datasets into validated, decision-ready insights
+                        and interactive dashboards.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Skills -->
+        <section id="skills" class="section-container">
+            <div class="section-heading-block">
+                <svg class="section-heading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                    <polyline points="2 17 12 22 22 17" />
+                    <polyline points="2 12 12 17 22 12" />
+                </svg>
+                <h2 class="section-title">Core Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Programming & Automation -->
+                <div class="skill-card card-glow">
+                    <div class="skill-header">
+                        <div class="skill-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Programming & Automation</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Oracle SQL</span>
+                        <span class="skill-tag">Unix Shell Scripting</span>
+                        <span class="skill-tag">Process Automation</span>
+                    </div>
+                </div>
+
+                <!-- Data Analytics & Database -->
+                <div class="skill-card card-glow">
+                    <div class="skill-header">
+                        <div class="skill-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Data Analytics & Database</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Data Profiling</span>
+                        <span class="skill-tag">ETL</span>
+                        <span class="skill-tag">Data Validation & Cleansing</span>
+                        <span class="skill-tag">Data Modelling</span>
+                        <span class="skill-tag">Variance Analysis</span>
+                        <span class="skill-tag">Trend Analysis</span>
+                    </div>
+                </div>
+
+                <!-- BI & Visualization -->
+                <div class="skill-card card-glow">
+                    <div class="skill-header">
+                        <div class="skill-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                                <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">BI & Visualization</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Microsoft Excel</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Dashboard Development</span>
+                        <span class="skill-tag">KPI Reporting</span>
+                    </div>
+                </div>
+
+                <!-- Core Competencies -->
+                <div class="skill-card card-glow">
+                    <div class="skill-header">
+                        <div class="skill-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1 0-3.12 3 3 0 0 1 0-4.88 2.5 2.5 0 0 1 0-3.12A2.5 2.5 0 0 1 9.5 2z" />
+                                <path
+                                    d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 0-3.12 3 3 0 0 0 0-4.88 2.5 2.5 0 0 0 0-3.12A2.5 2.5 0 0 0 14.5 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Core Competencies</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Root Cause Analysis</span>
+                        <span class="skill-tag">Data Reconciliation</span>
+                        <span class="skill-tag">Business Intelligence</span>
+                        <span class="skill-tag">Stakeholder Management</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-card card-glow">
+                    <div class="skill-header">
+                        <div class="skill-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">BMC Remedy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Experience -->
+        <section id="experience" class="section-container">
+            <div class="section-heading-block">
+                <svg class="section-heading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+
+            <div class="experience-timeline">
+                <!-- Experience Item -->
+                <div class="timeline-item card-glow">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header">
+                        <div class="timeline-title-row">
+                            <h3 class="timeline-role">Data Analyst</h3>
+                            <span class="timeline-date">
+                                <svg class="inline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                Oct 2023 – Present
+                            </span>
+                        </div>
+                        <h4 class="timeline-company">Amdocs Development Center India Pvt. Ltd. <span
+                                class="timeline-location">— Pune, India</span></h4>
+                    </div>
+                    <div class="timeline-body">
+                        <ul>
+                            <li>Engineered <strong>Prism Invoice Compliance Analyzer</strong>, a Python-based automation
+                                tool for PDF invoice data extraction, validation, and business-rule compliance, cutting
+                                manual invoice validation effort by <span class="text-highlight">80%</span> and reducing
+                                document review time from hours to minutes.</li>
+                            <li>Developed <strong>Pulse</strong>, a Python-based revenue analytics solution automating
+                                trend analysis, variance detection, and anomaly identification, reducing manual revenue
+                                analysis effort by <span class="text-highlight">80%</span> and accelerating operational
+                                insight delivery.</li>
+                            <li>Performed SQL-based data profiling, variance analysis, and reconciliation across
+                                large-scale billing datasets, uncovering revenue-impacting discrepancies and improving
+                                billing accuracy by <span class="text-highlight">20%</span>.</li>
+                            <li>Analyzed revenue trends and operational variances to generate actionable business
+                                insights, cutting investigation time from hours to minutes and accelerating root-cause
+                                analysis for critical billing issues.</li>
+                            <li>Designed interactive Power BI dashboards tracking <span
+                                    class="text-highlight">8–10</span> key billing KPIs, reducing manual reporting
+                                effort by <span class="text-highlight">50%</span> and enabling real-time, data-driven
+                                decision-making for stakeholders.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Projects -->
+        <section id="projects" class="section-container">
+            <div class="section-heading-block">
+                <svg class="section-heading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                </svg>
+                <h2 class="section-title">Key Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card card-glow">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                                <polyline points="10 9 9 9 8 9" />
+                            </svg>
+                        </div>
+                        <div class="project-title-area">
+                            <h3 class="project-name">Prism Invoice Compliance Analyzer</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">PDF Processing</span>
+                                <span class="project-tag">Data Validation</span>
+                                <span class="project-tag">Automation</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com" target="_blank" class="project-link-btn"
+                            aria-label="View Project Source">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <ul>
+                            <li>Designed a modular Python solution to extract, validate, and reconcile invoice data from
+                                PDF documents using configurable business-rule validation and compliance checks.</li>
+                            <li>Implemented a scalable subprocess-based execution architecture with centralized status
+                                tracking, enabling independent document processing and integration with Sentinel Ops
+                                Hub.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card card-glow">
+                    <div class="project-header">
+                        <div class="project-icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10" />
+                                <line x1="12" y1="20" x2="12" y2="4" />
+                                <line x1="6" y1="20" x2="6" y2="14" />
+                                <line x1="2" y1="20" x2="22" y2="20" />
+                            </svg>
+                        </div>
+                        <div class="project-title-area">
+                            <h3 class="project-name">Pulse Revenue Analytics</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">SQL</span>
+                                <span class="project-tag">Data Analysis</span>
+                                <span class="project-tag">Analytics</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com" target="_blank" class="project-link-btn"
+                            aria-label="View Project Source">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="project-body">
+                        <ul>
+                            <li>Built a modular analytics engine to evaluate revenue trends, perform variance analysis,
+                                and detect operational anomalies using configurable analytical rules across reporting
+                                periods.</li>
+                            <li>Engineered an automated insight-generation workflow transforming raw operational data
+                                into actionable business intelligence through centralized reporting and real-time
+                                analytical execution.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Education -->
+        <section id="education" class="section-container">
+            <div class="section-heading-block">
+                <svg class="section-heading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                    <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5" />
+                </svg>
+                <h2 class="section-title">Education</h2>
+            </div>
+
+            <div class="education-grid">
+                <!-- Education Item 1 -->
+                <div class="education-card card-glow">
+                    <div class="edu-date">
+                        <svg class="inline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                        Jun 2023 – May 2025
+                    </div>
+                    <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
+                    <h4 class="edu-school">Savitribai Phule Pune University</h4>
+                    <p class="edu-location">Pune, India</p>
+                </div>
+
+                <!-- Education Item 2 -->
+                <div class="education-card card-glow">
+                    <div class="edu-date">
+                        <svg class="inline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                        Jun 2020 – May 2023
+                    </div>
+                    <h3 class="edu-degree">Bachelor of Science in Computer Science</h3>
+                    <h4 class="edu-school">Indira College of Commerce and Science</h4>
+                    <p class="edu-location">Pune, India</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Visual Quote Footer Block -->
+        <footer class="portfolio-footer">
+            <div class="quote-container card-glow">
+                <span class="quote-mark quote-start">“</span>
+                <p class="quote-text">I turn data into insights and insights into impact.</p>
+                <span class="quote-mark quote-end">”</span>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Priyanka Kulkarni. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Script Import -->
+    <script src="app.js"></script>
+</body>
+
+</html>
